@@ -11,7 +11,6 @@ This tool takes care of this for you, provided your use-case follows a set of fa
 * you use **git** as a repository and have `git`(the executable) on your PATH
 * your `csproj` files have the same name as the folder in which they reside together with accompanying source code
 * you don't have more than one solution file (`.sln`) in one directory
-* you have **dotnetcore 3.1** or above (**note: as we are approaching the release of net7, I will soon upgrade the tool to net6)
 * your solution does not contain nested solution folders - the tool currently has an issue with that and will fail; until I find the time to fix that, the 
 workaround is simply to move the nested solution folder to top-level via VS, run the tool, and then move the solution folder back;seeing as this is two 
 simple drag-and-drops that only change the solution file, I hope this is acceptable.
@@ -37,6 +36,8 @@ dotnet tool update --global ModernRonin.ProjectRenamer
 When I publish a new version, I always post at [my blog](https://modernronin.github.io/) under the [renameproject tag](https://modernronin.github.io/tags/renameproject/), aside from updating this readme here.
 
 ### Release History
+2.3.0: support .NET8
+
 2.2.1:
 * bugfix: all Import Project directives with relative paths will be correctly adjusted now
 
