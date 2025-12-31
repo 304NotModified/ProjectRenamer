@@ -1,7 +1,9 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 <PropertyGroup>
-	<Version>2.2.1</Version>
+	<Version>2.3.0</Version>
 	<PackageReleaseNotes>
+2.3.0: 
+* support .NET8
 2.2.1:
 * bugfix: all Import Project directives with relative paths will be correctly adjusted now
 2.2.0:
